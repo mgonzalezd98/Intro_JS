@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro JS</title>
+    <title>Contador de Letras y Abecedario</title>
+    <style>
+        /* Aquí va el código CSS proporcionado antes */
+    </style>
 </head>
 <body>
-    <form action="">
-    <input type="text" id="text1">
-    <button>Clickeame!!!</button>
+    <h1>Contador de Letras y Abecedario</h1>
+    <input type="text" id="textInput" placeholder="Escribe algo aquí">
+    <button onclick="processText()">Contar Letras</button>
 
-    </form>
+    <div id="letterCount"></div>
+    <div id="alphabet"></div>
+
+    <script>
+        function processText() {
+            const text = document.getElementById('textInput').value;
+            const letterCount = text.length;
+            document.getElementById('letterCount').innerHTML = `El texto tiene ${letterCount} letras.`;
+
+            const alphabetDiv = document.getElementById('alphabet');
+            let alphabetHTML = '<h3>Abecedario:</h3><ul>';
+            for (let i = 65; i <= 90; i++) {
+                const letter = String.fromCharCode(i);
+                alphabetHTML += `<li>#${letter}</li>`;
+            }
+            alphabetHTML += '</ul>';
+            alphabetDiv.innerHTML = alphabetHTML;
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,75 @@
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente para toda la página */
+    background-color: #f4f4f9; /* Color de fondo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo del contenedor principal */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo del input de texto */
+#textInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049; /* Cambio de color cuando se pasa el mouse */
+}
+
+/* Estilo para el div del contador de letras */
+#letterCount {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para el div del abecedario */
+#alphabet {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+#alphabet ul {
+    list-style-type: none; /* Quitar los puntos de lista */
+    padding-left: 0;
+}
+
+#alphabet li {
+    margin: 5px 0;
+}
+
+/* Estilo de los elementos de la lista del abecedario */
+#alphabet li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 5px;
+}
